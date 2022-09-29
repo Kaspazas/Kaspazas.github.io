@@ -14,6 +14,14 @@ This page describes results derived during various projects done for universtiy
 somthing
 <h3>Hyper-sociallity</h3>
 Hyper social maaan
+
+|                |From Human|From Simple|From Sophisticated|
+|================|==========|===========|==================|
+|To Human        |12        |11         |10                |
+|To Simple       |11        |10         |11                |
+|To Sophisticated|13        |11         |12                |
+
+
 <h3>Differences in sophistication</h3>
 they different man
 <h2>Sentiment</h2>

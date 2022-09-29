@@ -3,9 +3,9 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-<h3>
+<h4>
 You can contact me via:
-</h3>
+</h4>
 
 Phone/WhatsApp: +370
 
