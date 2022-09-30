@@ -35,7 +35,7 @@ theme: minima
 remote_theme: minima
 plugins:
   - jekyll-feed
-markdown: GFM
+markdown: kramdown
 collections:
   works:
     output: true
