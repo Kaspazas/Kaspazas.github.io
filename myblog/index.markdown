@@ -4,7 +4,7 @@
 
 layout: home
 ---
-What does a man put here? links? do I need an "about me" if I write about me here?
+What does a man put here? links? do I need an "about me" if I write about me here? true
 
 Good day,
 
