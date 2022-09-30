@@ -34,7 +34,7 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
-
+markdown: GFM
 collections:
   works:
     output: true
