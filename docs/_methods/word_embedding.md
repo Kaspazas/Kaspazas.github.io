@@ -64,9 +64,7 @@ results in:
 	>>> ('animal', 0.5874612927436829), ('vatnik', 0.5697314739227295), ('motherfucker', 0.5686348676681519)
 
 <h3>Some explorations, visualizations</h3>
+Because word embedding models allow for a mathematical representation of closeness, we can visually represent those numeric observations between words:
+![word_embedding](/assets/images/we_1.png)
 
 
-<h2>Changes over time as a meaningful method of analysis</h2>
-somthing
-<h2>Visualizations</h2>
-Some examples of vizualization and what I've used them for
