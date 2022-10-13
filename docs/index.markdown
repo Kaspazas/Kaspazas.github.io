@@ -6,10 +6,10 @@ layout: home
 ---
 Good day,
 
-Thank you for visiting the portfolio. 
+Thank you for visiting my portfolio. 
 
 NOTE THAT THIS SITE IS A WORK IN PROGRESS
 
 May I suggest you check out my past [projects](/projects/)?
 
-Or temporarily more complete [methods](/methods/) section.
+Or the temporarily more complete [methods](/Methodologies/) section.
