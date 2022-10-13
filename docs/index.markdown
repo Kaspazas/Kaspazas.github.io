@@ -4,9 +4,10 @@
 
 layout: home
 ---
-What does a man put here? links? do I need an "about me" if I write about me here? true
-
 Good day,
 
 Thank you for visiting the portfolio. 
+
+NOTE THAT THIS SITE IS A WORK IN PROGRESS
+
 May I suggest you check out my past [projects](/projects/)?
