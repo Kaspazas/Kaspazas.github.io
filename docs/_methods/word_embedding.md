@@ -70,4 +70,20 @@ results in:
 Because word embedding models allow for a mathematical representation of closeness, we can visually represent those numeric observations between words:
 ![word_embedding](/assets/images/we_1.png)
 
+Note that just because Macron or Biden are closer to _terrible_ than _great_, this does not mean that these leaders are viewed positively by the commenters. It might simply reflect that in discussing various issues (instances where _terrible_ is used), these names appear more frequently.
 
+We can also create mathematical representations of _concepts_, wherein the concept of _negative_ is comprised of all words that could be used to describe bad things/events/people.
+The visualization above only considers _terrible_, but not words like _bad_, _horrible_ or _awful_
+
+So to create a _concept_:
+	
+	concept_bad = ["terrible","bad","horrible","awful"]
+	vals = list()
+	
+	for word in concept_bad:
+		val = model.wv.distance(word)
+		vals.append(val)
+	
+	avg = statistics.mean(vals)
+	
+more coming soon

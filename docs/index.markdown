@@ -11,3 +11,5 @@ Thank you for visiting the portfolio.
 NOTE THAT THIS SITE IS A WORK IN PROGRESS
 
 May I suggest you check out my past [projects](/projects/)?
+
+Or temporarily more complete [methods](/methods/) section.
