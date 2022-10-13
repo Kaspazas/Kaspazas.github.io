@@ -1,8 +1,8 @@
 ---
 title: Network analysis and visualization
-name: test_network
+name: Network analysis
 layout: page
-desc: Various forms of network analysis
+desc: Application of network analysis
 ---
 Social media = perfect for a network-centered lens
 

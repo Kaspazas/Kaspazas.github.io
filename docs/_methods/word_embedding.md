@@ -1,6 +1,6 @@
 ---
 title: Word Embedding
-name: test_embedding
+name: Word Embedding
 layout: page
 desc: Application of Word Embedding to textual social media contents
 ---

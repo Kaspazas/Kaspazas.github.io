@@ -1,27 +1,27 @@
 ---
 title: Sentiment analysis
-name: test_sentiment
+name: Sentiment analysis
 layout: page
 desc: Application of sentiment analysis to textual data
 ---
-Sentiment analysis is a method of detecting emotions, affect and positivity/negativity in text. The form of sentiment analysis I'm familiar with is a dictionary based approach, wherein many words in a given language are rated by humans for positivity/negativity. For example, ==satisfied==, while positive, is less positive than ==happy==.
+Sentiment analysis is a method of detecting emotions, affect and positivity/negativity in text. The form of sentiment analysis I'm familiar with is a dictionary based approach, wherein many words in a given language are rated by humans for positivity/negativity. For example, _satisfied_, while positive, is less positive than _happy_.
 
 <h2>Example of implementation</h2>
 Following the collection of 200,000 Reddit comments from /r/UkrainianConflict. The textual data had to be pre-processed:
 
-	'data = data[data["moderator_status"] != "moderator"] #if moderator - at least 99% of mod posts are the intro comment'
-    'data = data[data["text"] != ""] #if blank'
-    'data = data[data["text"] != "[deleted]"] #if [deleted]'
-    'data = data[data["text"] != "[removed]"] #if [removed]'
-    'data["text"] = data["text"].str.lower()'
-	'uacon_texts = list(data["text"])'
+	data = data[data["moderator_status"] != "moderator"] #if moderator - at least 99% of mod posts are the intro comment'
+    data = data[data["text"] != ""] #if blank
+    data = data[data["text"] != "[deleted]"] #if [deleted]
+    data = data[data["text"] != "[removed]"] #if [removed]
+    data["text"] = data["text"].str.lower() _#lower case everything_
+	uacon_texts = list(data["text"])
 	
-    'uacon_comments = []'
-    'for comment in uacon_texts:'
-        'comment = re.sub(r'\w+:\/{2}[\d\w-]+(\.[\d\w-]+)*(?:(?:\/[^\s/]*))*', '', comment)'
-        'comment = re.sub(r'/', '', comment)'
-        'uacon_comments.append(comment)'
-    'uacon_texts = uacon_comments'
+    uacon_comments = []
+    for comment in uacon_texts:
+        comment = re.sub(r'\w+:\/{2}[\d\w-]+(\.[\d\w-]+)*(?:(?:\/[^\s/]*))*', '', comment)
+        comment = re.sub(r'/', '', comment)
+        uacon_comments.append(comment)
+    uacon_texts = uacon_comments
 
 I then use [VADER](https://github.com/cjhutto/vaderSentiment) to detect sentiment:
 
