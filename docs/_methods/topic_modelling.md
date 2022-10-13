@@ -56,16 +56,16 @@ assign topics to downloaded comments:
                 topics = topics.drop([1])
             if len(topics) == 0:
                 topics = {'topic':'inconclusive', 'probability':'na'}
-                topic_tweet = topic_comment.append(topics, ignore_index=True)
+                topic_comment = topic_comment.append(topics, ignore_index=True)
                 print('doc ', i, '=', topics)
                 i=i+1
                 continue
             topics = {'topic': topics[0][0], 'probability': topics[0][1]}
-            topic_tweet = topic_comment.append(topics, ignore_index=True)
+            topic_comment = topic_comment.append(topics, ignore_index=True)
             print('doc ', i, '=', topics)
         except:
             topics = {'topic': 'inconclusive', 'probability': 'na'}
-            topic_tweet = topic_comment.append(topics, ignore_index=True)
+            topic_comment = topic_comment.append(topics, ignore_index=True)
             print('doc ', i, '=', topics)
     
         i += 1
