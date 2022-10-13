@@ -59,9 +59,12 @@ The resulting LineSentence file is then used to create the actual model:
 	)
 	
 Voila, we can now examine closeness and relationships between words:
+	
 	print(model.wv.most_similar(positive=['orc'], topn= 3)) # listing the three closest words
+
 results in:
-	>>> ('animal', 0.5874612927436829), ('vatnik', 0.5697314739227295), ('motherfucker', 0.5686348676681519)
+
+	>>('animal', 0.5874612927436829), ('vatnik', 0.5697314739227295), ('motherfucker', 0.5686348676681519)
 
 <h3>Some explorations, visualizations</h3>
 Because word embedding models allow for a mathematical representation of closeness, we can visually represent those numeric observations between words:
