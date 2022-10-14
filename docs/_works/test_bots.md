@@ -55,7 +55,11 @@ Inter-class retweet rates:
 
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
+<h4>Hypothesis 1.1 was confirmed</h4>
+<h4>Hypothesis 2 is confirmed</h4>
+
 <h2>Network analysis</h2>
+
 Visualization of the retweet network:
 ![old network image](/assets/images/network_temp.png)
 
@@ -86,6 +90,7 @@ Both classes of bots are seen to be over represented across most measures, given
 
 Furthermore, inter-bot cooperation was observed in the dataset, the highest scoring sophisticated bot for PageRank (number 10 overall) received 55.07% of their retweets from simple bots, 10.52% from other sophisticated bots, and only 34.42% from humans. However, such disproportionate numbers of bot retweets are not found in many places throughout the dataset. The second-best performing bot under the PageRank measure received 65.82% of their retweets from humans, followed by 18.37% and 15.82% from simple and sophisticated bots respectively. Such rates of bot retweets were common for both bots and humans. 
 
+<h4>Hypothesis 1.2 was confirmed</h4>
 
 <h2>Topic modelling</h2>
 
@@ -112,6 +117,9 @@ Using LDA (Latent Dirichlet Allocation via [Gensim](https://radimrehurek.com/gen
 
 In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
 
+<h4>Hypothesis 3 was rejected</h4>
+<h4>Hypothesis 4 was rejected</h4>
+
 <h2>Sentiment</h2>
 
 The thesis also used sentiment analysis (via [VADER](https://github.com/cjhutto/vaderSentiment)) to observe the use of emotions by bots and humans. Based on the literature review, it was hypothesized that bots would have a significantly different, specifically lower average sentiment. 
@@ -123,10 +131,31 @@ January 10th to January 11th (H(2) = 14.80, p = 0.0006),
 January 11th to January 12th (H(2) = 57.81 , p < 0.0001) and
 January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
 
+<h4>Hypothesis 5 was rejected</h4>
+
 ![class sentiments across topics](/assets/images/thesis_3.PNG)
 As found via Dunn tests following initial Kruskal-Wallis H tests, humans and simple bots had significantly different sentiment in their tweets across nine topics (all but topics 3, 8, 10 and 12). Sophisticated bots differed from humans in six topics (namely topics 0, 1, 3, 4, 5 and 9). Only on one occasion where a significant difference was observed between sophisticated bots and humans, no significance (wherein p < 0.05) was present between the compound sentiments of simple bots and humans. Lastly, sophisticated bots differed from their simple counterparts on 4 occasions (topics 2, 4, 5 and 9).
 
+<h4>Hypothesis 6 was confirmed</h4>
+
 <h2>Hashtags</h2>
+
+Out of the total 5022 unique hashtags contained in the dataset, 105 were used
+prominently enough (exceeding 15 uses) by human users to be investigated further. Upon
+graphing the usage of these by class, 13 (identified in figure 8 below) showed enough
+sustained disproportionate use by bots to be considered as potentially being hijacked. That is,
+these hashtags were being used at least once by bots for every two human uses and such a
+ratio remained consistent for at least six hours.
+
+The hashtags classified as potentially being hijacked had their associated tweet texts
+examined via sentiment analysis, and compared between classes. 
+
+The sentiments associated with each hashtag were compared across classes:
+
+![boxplots of sentiments](/assets/images/boxplots.png)
+
+Furthermore, the frequencies of co-occurring (hashtags used in the same tweets as the investigated hashtag) were counted and compared between classes.
+
 
 ![trumpvirus use per classification](/assets/images/thesis_4.PNG)
 
