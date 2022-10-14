@@ -7,6 +7,6 @@ permalink: /contact/
 You can contact me via:
 </h4>
 
-Phone/WhatsApp: +370
+Phone/WhatsApp: +37069385747
 
-or [email](mailto:kasparas@jucaitis.lt)
+or [Kasparas@Jucaitis.lt](mailto:kasparas@jucaitis.lt)
