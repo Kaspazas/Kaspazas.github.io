@@ -1,34 +1,48 @@
 ---
 title: Twitter Bot Tactics
-name: test_bots
+name: MA thesis on Twitter bots
 layout: page
 desc: Masters thesis on Twitter-bot behavior
 ---
-In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users. To keep the work topical and allow for new insights outside of bot tactics, the Tweets collected were from Covid-vaccine related discussions on Twitter. Several informed assumptions lay at the foundation of this work. Firstly, bots, having been used by various actors for over 10 years, have likely undergone some form of optimization. Automated accounts comprise Twitter user populations at high rates. It is suggested that having portions of a botnet behave in slightly different ways is a plausible mechanism for over time optimizing outreach, garnering interactions and so forth. Secondly, while it was outside of the scope of this work to identify the deployers of these bots, it was assumed that most automated accounts detected were part of a broader information operation. In turn, this was used to inform the hypotheses developed for this work, wherein expected bot behaviors were derived from information warfare literature. As was found later, many bots retweeted each other at extremely high rates, supporting the idea that many of these users came from a single deployer. 
+In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
+To keep the work topical and allow for new insights outside of bot tactics, the Tweets collected were from Covid-vaccine related discussions on Twitter.
+Several informed assumptions lay at the foundation of this work. Firstly, bots, having been used by various actors for over 10 years, have likely undergone some form of optimization. Automated accounts comprise Twitter user populations at high rates. It is suggested that having portions of a botnet behave in slightly different ways is a plausible mechanism for over time optimizing outreach, garnering interactions and so forth. Secondly, while it was outside of the scope of this work to identify the deployers of these bots, it was assumed that most automated accounts detected were part of a broader information operation. 
+In turn, this was used to inform the hypotheses developed for this work, wherein expected bot behaviors were derived from information warfare literature. As was found later, many bots retweeted each other at extremely high rates, supporting the idea that many of these users came from a single deployer.
+
+The hypotheses were:
+Hypothesis 1-1: Bots will disproportionately occupy positions of high network influence
+Hypothesis 1-2: Bots will have a proportionately higher number of outgoing communications (tweets, retweets) than human accounts
+Hypothesis 2: Bots with a higher Botometer score will retweet and mention other bots more frequently than sophisticated bots (accounts with lower Botometer scores)
+Hypothesis 3: Bots disproportionately participate in hostility inducing topics (e.g., insulting, stereotyping the opposition)
+Hypothesis 4: Bots will disproportionately participate in conspiracy theory related topics
+Hypothesis 5: The sentiment of bots will be significantly more negative than human sentiment
+Hypothesis 6: Sentiment in bot tweets will be different from human sentiment for most subtopics
+Hypothesis 7: Bots will participate in hashtag hijacking
 
 To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, Botometer LINK) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
 
 <h2>General observations</h2>
 Data overview:
 
-|                  |Tweets (% total)|Users (% total)|Initiated Retweets(% total)|Hashtags used (% total)|
-|==================|================|===============|===========================|=======================|
-|Simple bots       |3,673 (12.40%)  |2,418 (10.65%) |3,006 (16.49%)             |3,496 (14.53%)         |
-|Sophisticated bots|2,807 (9.48%)   |1,764 (7.77%)  |1,872 (10.27%)             |3,821 (15.88%)         |
-|Humans            |23,074 (77.92%) |18,471 (81.36%)|13,345 (73.23%)            |16,690 (69.37%)        |
-|Total             |29,613          |22,703         |18,224                     |24,060                 |
+|                  |Tweets (% total)|Users (% total)|Initiated Retweets (% total)|Hashtags used (% total)|
+|==================|================|===============|============================|=======================|
+|Simple bots       |3,673 (12.40%)  |2,418 (10.65%) |3,006 (16.49%)              |3,496 (14.53%)         |
+|Sophisticated bots|2,807 (9.48%)   |1,764 (7.77%)  |1,872 (10.27%)              |3,821 (15.88%)         |
+|Humans            |23,074 (77.92%) |18,471 (81.36%)|13,345 (73.23%)             |16,690 (69.37%)        |
+|Total             |29,613          |22,703         |18,224                      |24,060                 |
 
-Users that could not be classified (no Botometer score was returned) are included in totals.
+Users that could not be classified (no [Botometer](https://botometer.osome.iu.edu/) score was returned) are included in totals.
 The number of bots in the total population found in this work fall within expected numbers based on past works. Furthermore, matching past findings, both types of bots tend to tweet much more frequently than humans. This is indicated by the ratio of users to tweets.
 Furthermore, an extremely high rate of hashtag use by sophisticated bots was observed.
 
 
+
 Inter-class retweet rates:
-|                |From Human              |From Simple            |From Sophisticated    |
-|================|========================|=======================|======================|
-|To Human        |10,218 (84.25% of total)|1,218 (42.88% of total)|1183 (67.41% of total)|
-|To Simple       |983 (8.11 % of total)   |920 (32.39% of total)  |261 (14.87% of total) |
-|To Sophisticated|927 (7.64% of total)    |702 (24.72% of total)  |311 (17.72% of total) |
+|                 |From Human               |From Simple             |From Sophisticated     |
+|-----------------|-------------------------|------------------------|-----------------------|
+|To Human         |10,218 (84.25% of total) |1,218 (42.88% of total) |1183 (67.41% of total) |
+|To Simple        |983 (8.11 % of total)    |920 (32.39% of total)   |261 (14.87% of total)  |
+|To Sophisticated |927 (7.64% of total)     |702 (24.72% of total)   |311 (17.72% of total)  |
 
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
@@ -95,7 +109,10 @@ The thesis also used sentiment analysis (via [VADER](https://github.com/cjhutto/
 In the thesis I divided the duration of the dataset into four segments (three 24h and one 12h periods) for which the sentiment between classes was compared statistically. 
 
 ![sentiment over time](/assets/images/thesis_2.png)
-Because sentiment values as derived via [VADER](https://github.com/cjhutto/vaderSentiment) were not normally distributed, a limited selection of statistical tests remained valid. This work used Kruskal-Wallis H tests, which showed a significant difference in sentiment between user classes on three occasions. The segments with significant difference were: January 10th to January 11th (H(2) = 14.80, p = 0.0006), January 11th to January 12th (H(2) = 57.81 , p < 0.0001) and January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
+Because sentiment values as derived via [VADER](https://github.com/cjhutto/vaderSentiment) were not normally distributed, a limited selection of statistical tests remained valid. This work used Kruskal-Wallis H tests, which showed a significant difference in sentiment between user classes on three occasions. The segments with significant difference were: 
+January 10th to January 11th (H(2) = 14.80, p = 0.0006),
+January 11th to January 12th (H(2) = 57.81 , p < 0.0001) and
+January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
 
 ![class sentiments across topics](/assets/images/thesis_3.png)
 As found via Dunn tests following initial Kruskal-Wallis H tests, humans and simple bots had significantly different sentiment in their tweets across nine topics (all but topics 3, 8, 10 and 12). Sophisticated bots differed from humans in six topics (namely topics 0, 1, 3, 4, 5 and 9). Only on one occasion where a significant difference was observed between sophisticated bots and humans, no significance (wherein p < 0.05) was present between the compound sentiments of simple bots and humans. Lastly, sophisticated bots differed from their simple counterparts on 4 occasions (topics 2, 4, 5 and 9).
@@ -107,9 +124,13 @@ As found via Dunn tests following initial Kruskal-Wallis H tests, humans and sim
 <h2>Main takeaways</h2>
 
 1. A greater portion of simple bot retweets is directed toward other simple bots. It is posed by this work that this indicates an attempt to distort the discursive space by making it so that when human users seek out a topic on Twitter, much of the conversation will be occupied by tweets of bot-origin. Because simple bots do not retweet and thus directly interact with human users frequently (relative to other classes), they are likely being used to reinforce the appearance of discourse, ensuring that certain topics remain visible and salient.
+
 2. It is posed that sophisticated bots target human users as interaction partners frequently and in turn, are able to better position themselves in a discursive network, reaching more important humans at higher rates. Furthermore, the thesis suggests that the benefit of sophisticated bots is also likely to be found in the content they produce, which is often liked and shared by humans.
-3. Sentiment and content analyses show that while bots exhibit different preferences for sentiment and topics than humans, no clear patterns indicative of tactics can be identified in this work. This work did find that across most topics and timeframes, the sentiment between simple bots and humans was significantly different, indicating that simple bots construct/select the texts of their tweets in a way distinct to humans. Fewer instances of divergence were observed between sophisticated bots and humans, reinforcing XXX
+
+3. Sentiment and content analyses show that while bots exhibit different preferences for sentiment and topics than humans, no clear patterns indicative of tactics can be identified in this work. This work did find that across most topics and timeframes, the sentiment between simple bots and humans was significantly different, indicating that simple bots construct/select the texts of their tweets in a way distinct to humans. Fewer instances of divergence were observed between sophisticated bots and humans, reinforcing the idea that sophisticated bots behave and comunicate more like humans than simple bots.
+
 4. Results relating to topic preferences did not reveal generalizable differences between the two types of automated accounts. Differences in participation across topics were found, but topics prioritized by either class did not seem to share any themes. In this work sophisticated bots, relative to simple bots (but not human users) were over represented in: Questioning medical authorities, Mask wearing and Unvaccinated people causing deaths. Simple bots participated in Spread of Omicron, Poor critical thinking ability and Addressing antivaxxers at higher relative rates than sophisticated bots. 
+
 5. Both classes of automated accounts shared their compound sentiment valence across observed time segments, but the differences in intensity led to an identifiable significant difference in compound sentiment values for half of the occasions. These observations imply that the differences in sophistication should be informing sentiment-related hypotheses.
 
 

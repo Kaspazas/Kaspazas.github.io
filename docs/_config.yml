@@ -22,7 +22,7 @@ title: Portfolio
 email: Kasparas@Jucaitis.lt
 description: >- # this means to ignore newlines until "baseurl:"
   This is a portfolio of Kasparas Jucaitis, highlighting some quantitative
-  research methods I'm familiar with, as well as some projects I've completed. 
+  research methods I'm familiar with, as well as some projects I've completed. Made using Jekyll 
 baseurl: "/" # the subpath of your site, e.g. /blog
 
 url: "https://Kaspazas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
