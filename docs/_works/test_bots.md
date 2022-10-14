@@ -4,13 +4,16 @@ name: MA thesis on Twitter bots
 layout: page
 desc: Masters thesis on Twitter-bot behavior
 ---
+
 <2>Introduction</2>
+
 In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
 To keep the work topical and allow for new insights outside of bot tactics, the Tweets collected were from Covid-vaccine related discussions on Twitter.
 Several informed assumptions lay at the foundation of this work. Firstly, bots, having been used by various actors for over 10 years, have likely undergone some form of optimization. Automated accounts comprise Twitter user populations at high rates. It is suggested that having portions of a botnet behave in slightly different ways is a plausible mechanism for over time optimizing outreach, garnering interactions and so forth. Secondly, while it was outside of the scope of this work to identify the deployers of these bots, it was assumed that most automated accounts detected were part of a broader information operation. 
 In turn, this was used to inform the hypotheses developed for this work, wherein expected bot behaviors were derived from information warfare literature. As was found later, many bots retweeted each other at extremely high rates, supporting the idea that many of these users came from a single deployer.
 
-<3>The hypotheses: </3> 
+<3>The hypotheses: </3>
+
 Hypothesis 1-1: Bots will disproportionately occupy positions of high network influence
 
 Hypothesis 1-2: Bots will have a proportionately higher number of outgoing communications (tweets, retweets) than human accounts
@@ -26,6 +29,8 @@ Hypothesis 5: The sentiment of bots will be significantly more negative than hum
 Hypothesis 6: Sentiment in bot tweets will be different from human sentiment for most subtopics
 
 Hypothesis 7: Bots will participate in hashtag hijacking
+
+<4>Furthermore: </4>
 
 To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, Botometer LINK) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
 
