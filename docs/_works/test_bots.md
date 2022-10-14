@@ -38,11 +38,12 @@ Furthermore, an extremely high rate of hashtag use by sophisticated bots was obs
 
 
 Inter-class retweet rates:
-|                 |From Human               |From Simple             |From Sophisticated     |
-|-----------------|-------------------------|------------------------|-----------------------|
-|To Human         |10,218 (84.25% of total) |1,218 (42.88% of total) |1183 (67.41% of total) |
-|To Simple        |983 (8.11 % of total)    |920 (32.39% of total)   |261 (14.87% of total)  |
-|To Sophisticated |927 (7.64% of total)     |702 (24.72% of total)   |311 (17.72% of total)  |
+
+|                             |     From   human                  |     From   simple bot            |     From   sophisticated bot    |
+|-----------------------------|-----------------------------------|----------------------------------|---------------------------------|
+|     To human                |     10,218   (84.25% of total)    |     1,218   (42.88% of total)    |     1183   (67.41% of total)    |
+|     To basic bot            |     983 (8.11 % of total)         |     920 (32.39% of total)        |     261 (14.87% of total)       |
+|     To sophisticated bot    |     927   (7.64% of total)        |     702   (24.72% of total)      |     311   (17.72% of total)     |
 
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
@@ -99,7 +100,7 @@ Using LDA (Latent Dirichlet Allocation via [Gensim](https://radimrehurek.com/gen
 |     12           |     Drinking   urine                            |
 
 
-![participation across topics](/assets/images/thesis_1.png)
+![participation across topics](/assets/images/thesis_1.PNG)
 
 In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
 
@@ -108,18 +109,18 @@ In this work, bots tended to avoid discussing the difficulties faced by the heal
 The thesis also used sentiment analysis (via [VADER](https://github.com/cjhutto/vaderSentiment)) to observe the use of emotions by bots and humans. Based on the literature review, it was hypothesized that bots would have a significantly different, specifically lower average sentiment. 
 In the thesis I divided the duration of the dataset into four segments (three 24h and one 12h periods) for which the sentiment between classes was compared statistically. 
 
-![sentiment over time](/assets/images/thesis_2.png)
+![sentiment over time](/assets/images/thesis_2.PNG)
 Because sentiment values as derived via [VADER](https://github.com/cjhutto/vaderSentiment) were not normally distributed, a limited selection of statistical tests remained valid. This work used Kruskal-Wallis H tests, which showed a significant difference in sentiment between user classes on three occasions. The segments with significant difference were: 
 January 10th to January 11th (H(2) = 14.80, p = 0.0006),
 January 11th to January 12th (H(2) = 57.81 , p < 0.0001) and
 January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
 
-![class sentiments across topics](/assets/images/thesis_3.png)
+![class sentiments across topics](/assets/images/thesis_3.PNG)
 As found via Dunn tests following initial Kruskal-Wallis H tests, humans and simple bots had significantly different sentiment in their tweets across nine topics (all but topics 3, 8, 10 and 12). Sophisticated bots differed from humans in six topics (namely topics 0, 1, 3, 4, 5 and 9). Only on one occasion where a significant difference was observed between sophisticated bots and humans, no significance (wherein p < 0.05) was present between the compound sentiments of simple bots and humans. Lastly, sophisticated bots differed from their simple counterparts on 4 occasions (topics 2, 4, 5 and 9).
 
 <h2>Hashtags</h2>
 
-![trumpvirus use per classification](/assets/images/thesis_4.png)
+![trumpvirus use per classification](/assets/images/thesis_4.PNG)
 
 <h2>Main takeaways</h2>
 
