@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Methodologies
-permalink: /Methodologies/
+permalink: /methodologies/
 ---
 In analyzing social media data, I've used a variety of methodologies, including, but not limited to:
 <ul>
