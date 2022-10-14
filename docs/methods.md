@@ -15,5 +15,7 @@ In analyzing social media data, I've used a variety of methodologies, including,
  {% endfor %}
 </ul>
 
+Note that the code included does not cover the whole procedure, various smaller actions are often left out for readability.
+
 Other, much worse documented code can be found on
 [Github](https://github.com/Kaspazas)
