@@ -14,7 +14,7 @@ Note that word embeddeding does not reveal people's opinions per say, but rather
 In the personality trait example, agreeableness might be viewed positively, but many people could discuss the various issues that an agreeable individual might encounter. Hence, one needs to be aware of what the technology allows for and the results imply.
 
 <h2>An example of implementation</h2>
-Following the collection of 200,000 Reddit comments from _/r/UkrainianConflict_. The textual data had to be pre-processed, as shown in [sentiment analysis](/methods/sentiment-analysis).
+Following the collection of 200,000 Reddit comments from _/r/UkrainianConflict_. The textual data had to be pre-processed, as shown in [sentiment analysis](/methodologies/sentiment-analysis).
 
 To make the word embeddeding model creation process manageable, the data is divided into _bins_. 
 

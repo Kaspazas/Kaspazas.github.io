@@ -13,4 +13,4 @@ NOTE THAT THIS SITE IS A WORK IN PROGRESS
 
 May I suggest you check out my write up of my master's thesis [Automated Propoganda Posters](/projects/test-bots)?
 
-Or the temporarily more complete [methods](/Methodologies/) section.
+Or the temporarily more complete [methods](/methodologies/) section.
