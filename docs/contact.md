@@ -9,4 +9,4 @@ You can contact me via:
 
 Phone/WhatsApp: +37069385747
 
-or [Kasparas@Jucaitis.lt](mailto:kasparas@jucaitis.lt)
+[Kasparas@Jucaitis.lt](mailto:kasparas@jucaitis.lt)
