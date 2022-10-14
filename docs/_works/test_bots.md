@@ -2,7 +2,7 @@
 title: Twitter Bot Tactics
 name: MA thesis on Twitter bots
 layout: page
-desc:Twitter bot behavior and tactics within COVID-19 vaccination related Twitter discourse
+desc: Twitter bot behavior and tactics within COVID-19 vaccination related Twitter discourse
 ---
 
 <h2>Introduction</h2>
@@ -35,6 +35,7 @@ Hypothesis 7: Bots will participate in hashtag hijacking
 To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, Botometer LINK) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
 
 <h2>General observations</h2>
+
 Data overview:
 
 |                  |Tweets (% total)|Users (% total)|Initiated Retweets (% total)|Hashtags used (% total)|
@@ -47,8 +48,6 @@ Data overview:
 Users that could not be classified (no [Botometer](https://botometer.osome.iu.edu/) score was returned) are included in totals.
 The number of bots in the total population found in this work fall within expected numbers based on past works. Furthermore, matching past findings, both types of bots tend to tweet much more frequently than humans. This is indicated by the ratio of users to tweets.
 Furthermore, an extremely high rate of hashtag use by sophisticated bots was observed.
-
-
 
 Inter-class retweet rates:
 
