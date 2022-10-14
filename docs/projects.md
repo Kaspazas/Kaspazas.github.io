@@ -16,5 +16,5 @@ Throughout my time studying, I authored several projects which I would like to h
  {% endfor %}
 </ul>
 
-Other, much worse documented code can be found at:
-[github](https://github.com/Kaspazas)
+Other, much worse documented code can be found on
+[Github](https://github.com/Kaspazas)
