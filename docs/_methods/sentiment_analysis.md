@@ -37,7 +37,7 @@ I then use [VADER](https://github.com/cjhutto/vaderSentiment) to detect sentimen
 <h3>A deeper, more practically applicable approach</h3>
 One can sub-divide devide their dataset, based on the topic of given texts, or through the inclusion of certain keywords.
 
-For marketing, this could be used to examine sentiments related to features of a product or event. For example, one could evaluate the sentiment related to the price of a product, by segmenting the downloaded text via certain keywords.
+For marketing, this could be used to examine sentiments related to features of a product or event. For example, one could evaluate the sentiment related to the price of a product, by segmenting the downloaded text into a sub-set that includes price related keywords.
 
 As for the example dataset used here, we can use it to evaluate sentiment related to russian equipment:
 
