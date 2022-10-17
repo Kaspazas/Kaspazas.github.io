@@ -20,11 +20,11 @@ Information warfare was used to identify broader approaches to controlling and e
 Through reviewing features and incentives of social media platforms, the thesis presented social media as a metaphorical _battleground_. Wherein network structures limit the ability of one to attack on a broad front, algorithms act as external forces that aid or hinder the spread of (dis)information, and the owners of the platforms get to alter the algorithmic forces or remove certain information/users, acting as a third party combatant. 
 The technological features of bots show them to be a highly coordinated, easily replenishable force. In turn, these automated accounts, through their vast numbers can also shape the algorithms and make sure they infiltrate various corners of a discussion network.
 
-Hypothesis 1-1: Bots will disproportionately occupy positions of high network influence
+Hypothesis 1-1: Bots will have a proportionately higher number of outgoing communications (tweets, retweets) than human accounts
 
-Hypothesis 1-2: Bots will have a proportionately higher number of outgoing communications (tweets, retweets) than human accounts
+Hypothesis 1-2: Bots with a higher Botometer score will retweet and mention other bots more frequently than sophisticated bots (accounts with lower Botometer scores)
 
-Hypothesis 2: Bots with a higher Botometer score will retweet and mention other bots more frequently than sophisticated bots (accounts with lower Botometer scores)
+Hypothesis 2: Bots will disproportionately occupy positions of high network influence
 
 Hypothesis 3: Bots disproportionately participate in hostility inducing topics (e.g., insulting, stereotyping the opposition)
 
@@ -40,7 +40,7 @@ Hypothesis 7: Bots will participate in hashtag hijacking
 
 To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, [Botometer](https://botometer.osome.iu.edu/)) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
 
-Lastly, in the thesis and this write-up I refer to groups of users as a class (for classification), which are _missing_, _humans_, _simple bots_ and _sophisticated bots_, defined by [Botometer](https://botometer.osome.iu.edu/) results.
+Lastly, in the thesis and this write-up I refer to groups of users as a class (for classification), which are _missing_, _humans_, _simple bots_ and _sophisticated bots_, defined by [Botometer](https://botometer.osome.iu.edu/) scores.
 
 <h2>General observations</h2>
 
@@ -67,8 +67,8 @@ Inter-class retweet rates:
 
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
-<h4>Hypothesis 1.1 was confirmed</h4>
-<h4>Hypothesis 2 was confirmed</h4>
+<h4>Hypothesis 1-1 was confirmed because bots had rates (user to tweet) of out-going communications, which were higher than that of humans'</h4>
+<h4>Hypothesis 1-2 was confirmed because both classes of bots (especially highlighted by simple bots) retweet other bots much more frequently than humans retweet bots</h4>
 
 <h2>Network analysis</h2>
 
@@ -102,7 +102,7 @@ Both classes of bots are seen to be over represented across most measures, given
 
 Furthermore, inter-bot cooperation was observed in the dataset, the highest scoring sophisticated bot for PageRank (number 10 overall) received 55.07% of their retweets from simple bots, 10.52% from other sophisticated bots, and only 34.42% from humans. However, such disproportionate numbers of bot retweets are not found in many places throughout the dataset. The second-best performing bot under the PageRank measure received 65.82% of their retweets from humans, followed by 18.37% and 15.82% from simple and sophisticated bots respectively. Such rates of bot retweets were common for both bots and humans. 
 
-<h4>Hypothesis 1.2 was confirmed</h4>
+<h4>Hypothesis 2 was confirmed because bots comprised a disproportionate number of top-performing users across various influence and centrality measures</h4>
 
 <h2>Topic modelling</h2>
 
@@ -148,7 +148,7 @@ In this work, bots tended to avoid discussing the difficulties faced by the heal
 
 While bots (specifically simple bots) comprised a disproportionate number of users participating in hostility inducing topics, they did not do so outside of a confidence interval of 95%. Furthermore, some topics classified as hostility inducing, saw very few bots tweets. 
 
-<h4>Hypothesis 3 was rejected</h4>
+<h4>Hypothesis 3 was rejected because bots did not disproportionately contribute to hostility inducing topics</h4>
 
 |     Sub-topic                          |     No. Humans        |     No. Simple bots    |     No. Sophisticated bots    |
 |----------------------------------------|-----------------------|------------------------|-------------------------------|
@@ -158,7 +158,7 @@ While bots (specifically simple bots) comprised a disproportionate number of use
 
 Neither bot class showed disproportionate participation in conspiracy theory related topics, despite some these sub-topics containing actual instances of disinformation.
 
-<h4>Hypothesis 4 was rejected</h4>
+<h4>Hypothesis 4 was rejected because bots did not disproportionately participate in conspiracy-related discussions</h4>
 
 <h2>Sentiment</h2>
 
@@ -174,14 +174,14 @@ January 11th to January 12th (H(2) = 57.81 , p < 0.0001);
 
 January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
 
-<h4>Hypothesis 5 was rejected</h4>
+<h4>Hypothesis 5 was rejected because despite bots having a significantly different sentiment than humans in most observed time periods, it was not significantly more negative overall</h4>
 
 ![class sentiments across topics](/assets/images/thesis_3.PNG)
 As found via Dunn tests following initial Kruskal-Wallis H tests, humans and simple bots had significantly different sentiment in their tweets across nine topics (all but topics 3, 8, 10 and 12). Sophisticated bots differed from humans in six topics (namely topics 0, 1, 3, 4, 5 and 9). Only on one occasion where a significant difference was observed between sophisticated bots and humans, no significance (wherein p < 0.05) was present between the compound sentiments of simple bots and humans. Lastly, sophisticated bots differed from their simple counterparts on 4 occasions (topics 2, 4, 5 and 9).
 
-<h4>Hypothesis 6 was confirmed</h4>
+<h4>Hypothesis 6 was confirmed because the sentiments of humans and bots were significantly different across most topics</h4>
 
-<h2>Hashtags</h2>
+<h2>Hashtags WORK IN PROGRESS</h2>
 
 Out of the total 5022 unique hashtags contained in the dataset, 105 were used
 prominently enough (exceeding 15 uses) by human users to be investigated further. Upon
@@ -201,6 +201,8 @@ Furthermore, the frequencies of co-occurring (hashtags used in the same tweets a
 
 
 ![trumpvirus use per classification](/assets/images/thesis_4.PNG)
+
+<h4> Hypothesis 7 was confirmed because several hashtags met the criteria of being hijacked </h4> 
 
 <h2>Main takeaways</h2>
 
