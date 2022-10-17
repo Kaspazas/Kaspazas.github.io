@@ -9,7 +9,7 @@ Sentiment analysis is a method of detecting emotions, affect and positivity/nega
 <h2>Example of implementation</h2>
 Following the collection of 200,000 Reddit comments from /r/UkrainianConflict. The textual data had to be pre-processed:
 
-	data = data[data["moderator_status"] != "moderator"] #if moderator - at least 99% of mod posts are the intro comment'
+	data = data[data["moderator_status"] != "moderator"] #if moderator - at least 99% of mod posts are the intro comment
     data = data[data["text"] != ""] #if blank
     data = data[data["text"] != "[deleted]"] #if [deleted]
     data = data[data["text"] != "[removed]"] #if [removed]

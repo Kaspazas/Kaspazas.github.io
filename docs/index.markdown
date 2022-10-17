@@ -7,6 +7,7 @@ layout: home
 Good day,  
 Thank you for visiting my portfolio. 
 
+Throughout my studies, I've placed heavy emphasis on various methods of analysing social media and I would like to highlight them here.
 
 
 NOTE THAT THIS SITE IS A WORK IN PROGRESS
