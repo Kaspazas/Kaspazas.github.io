@@ -7,7 +7,7 @@ desc: Twitter bot behavior and tactics within COVID-19 vaccination related Twitt
 
 <h2>Introduction</h2>
 
-In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
+	In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
 To keep the work topical and allow for new insights outside of bot tactics, the Tweets collected were from Covid-vaccine related discussions on Twitter.
 Several informed assumptions lay at the foundation of this work. Firstly, bots, having been used by various actors for over 10 years, have likely undergone some form of optimization. Automated accounts comprise Twitter user populations at high rates. It is suggested that having portions of a botnet behave in slightly different ways is a plausible mechanism for over time optimizing outreach, garnering interactions and so forth. Secondly, while it was outside of the scope of this work to identify the deployers of these bots, it was assumed that most automated accounts detected were part of a broader information operation. 
 In turn, this was used to inform the hypotheses developed for this work, wherein expected bot behaviors were derived from information warfare literature. As was found later, many bots retweeted each other at extremely high rates, supporting the idea that many of these users came from a single deployer.
@@ -60,7 +60,7 @@ Inter-class retweet rates:
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
 <h4>Hypothesis 1.1 was confirmed</h4>
-<h4>Hypothesis 2 is confirmed</h4>
+<h4>Hypothesis 2 was confirmed</h4>
 
 <h2>Network analysis</h2>
 
@@ -90,7 +90,7 @@ The number of users per class amongst top performers for various network influen
 
 The thesis featured network analysis, wherein several network centrality and influence measures were calculated. The table above shows what percentage of each class comprised the lists of top-100,50,15 ranking users. 
 
-Both classes of bots are seen to be over represented across most measures, given how many of the total users they comprise (wherein simple bots are x, sophisticated bots are y of the whole population). Sophisticated bots perform the best of all classes. As indicated by the number of these bots amongst top performing Eigenvector centrality and PageRank users, they are able to retweet and receive retweets from other influential users. 
+Both classes of bots are seen to be over represented across most measures, given how many of the total users they comprise (wherein simple bots are 10.65%, sophisticated bots are 7.77% of the whole population). Sophisticated bots perform the best of all classes. As indicated by the number of these bots amongst top performing Eigenvector centrality and PageRank users, they are able to retweet and receive retweets from other influential users. 
 
 Furthermore, inter-bot cooperation was observed in the dataset, the highest scoring sophisticated bot for PageRank (number 10 overall) received 55.07% of their retweets from simple bots, 10.52% from other sophisticated bots, and only 34.42% from humans. However, such disproportionate numbers of bot retweets are not found in many places throughout the dataset. The second-best performing bot under the PageRank measure received 65.82% of their retweets from humans, followed by 18.37% and 15.82% from simple and sophisticated bots respectively. Such rates of bot retweets were common for both bots and humans. 
 
@@ -121,7 +121,25 @@ Using LDA (Latent Dirichlet Allocation via [Gensim](https://radimrehurek.com/gen
 
 In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
 
+|     Sub-topic                  |     No. Humans        |     No. Simple bots    |     No. Sophisticated bots    |
+|--------------------------------|-----------------------|------------------------|-------------------------------|
+|     Spread of Omicron          |     1,092             |     109                |     80                        |
+|     Addressing antivaxxers     |     825               |     285                |     138                       |
+|     Drinking urine             |     212               |     30                 |     19                        |
+|     Total ( % of all users)    |     2,129 (76.31%)    |     424 (15.2%)        |     237 (8.49%)               |
+
+While bots (specifically simple bots) comprised a disproportionate number of users participating in hostility inducing topics, they did not do so outside of a confidence interval of 95%. Furthermore, some topics classified as hostility inducing, saw very few bots tweets. 
+
 <h4>Hypothesis 3 was rejected</h4>
+
+|     Sub-topic                          |     No. Humans        |     No. Simple bots    |     No. Sophisticated bots    |
+|----------------------------------------|-----------------------|------------------------|-------------------------------|
+|     Questioning medical authorities    |     850               |     84                 |     83                        |
+|     Antivax beliefs                    |     329               |     19                 |     28                        |
+|     Total ( % of all users)            |     1,179 (84.64%)    |     103 (7.39%)        |     111 (7.94%)               |
+
+Neither bot class showed disproportionate participation in conspiracy theory related topics, despite some these sub-topics containing actual instances of disinformation.
+
 <h4>Hypothesis 4 was rejected</h4>
 
 <h2>Sentiment</h2>
@@ -131,8 +149,11 @@ In the thesis I divided the duration of the dataset into four segments (three 24
 
 ![sentiment over time](/assets/images/thesis_2.PNG)
 Because sentiment values as derived via [VADER](https://github.com/cjhutto/vaderSentiment) were not normally distributed, a limited selection of statistical tests remained valid. This work used Kruskal-Wallis H tests, which showed a significant difference in sentiment between user classes on three occasions. The segments with significant difference were: 
-January 10th to January 11th (H(2) = 14.80, p = 0.0006),
-January 11th to January 12th (H(2) = 57.81 , p < 0.0001) and
+
+January 10th to January 11th (H(2) = 14.80, p = 0.0006);
+
+January 11th to January 12th (H(2) = 57.81 , p < 0.0001);
+
 January 12th 12AM to January 12th 12PM (H(2) = 109 ,  p < 0.0001).
 
 <h4>Hypothesis 5 was rejected</h4>
