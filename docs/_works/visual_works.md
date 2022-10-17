@@ -1,6 +1,6 @@
 ---
 title: Visual works
-name: visual
+name: Visual works
 layout: page
 desc: Some original designs and photo restoration, mainly using Photoshop/Illustrator
 ---
@@ -17,11 +17,15 @@ To enrich the visual concept, I thought it'd be a good idea to segment the Babus
 
 ![baba road](/assets/images/Babaroad.jpg)
 
+Initailly, I used the Maxima logo on the bags, but figured I should remove it as seen in the first image and the one below.
+
 Lastly, to embrace the concept, here's a babushka selling strawberries:
 
 ![strawberries](/assets/images/bababraskes1.jpg)
 
 <h2> Photo restoration </h2>
+
+Need to make the images smaller before uploading. 
 
 <h2> Gifs, animated images </h2>
 
