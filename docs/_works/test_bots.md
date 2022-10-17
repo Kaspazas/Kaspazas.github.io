@@ -134,10 +134,11 @@ These are the sub-topics (and example tweets) relevant to the hypotheses:
 |     Questioning medical   authorities    |     mRNA     The   vaccine works. There's been over 500 million doses. Its not experimental.   Doctors are smarter than you. The media that is being censored is being   censored because it is full of shit. The vaccine won't hurt you. Or kill you.        Stop   spreading propaganda. Idc if ur antivaxx    |
 |     Antivax beliefs                      |     there is one pill that big   pharmaceutical will never produce or give to the people is truth.     #massformationpsychosis #pfizer   #astrazeneca #covid19 #holdtheline #antivaxx                                                                                                                            |
 
+In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
 
 ![participation across topics](/assets/images/thesis_1.PNG)
 
-In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
+Class participation rates in hostility inducing topics:
 
 |     Sub-topic                  |     No. Humans        |     No. Simple bots    |     No. Sophisticated bots    |
 |--------------------------------|-----------------------|------------------------|-------------------------------|
@@ -149,6 +150,8 @@ In this work, bots tended to avoid discussing the difficulties faced by the heal
 While bots (specifically simple bots) comprised a disproportionate number of users participating in hostility inducing topics, they did not do so outside of a confidence interval of 95%. Furthermore, some topics classified as hostility inducing, saw very few bots tweets. 
 
 <h4>Hypothesis 3 was rejected because bots did not disproportionately contribute to hostility inducing topics</h4>
+
+Class participation rates in conspiracy theory related topics:
 
 |     Sub-topic                          |     No. Humans        |     No. Simple bots    |     No. Sophisticated bots    |
 |----------------------------------------|-----------------------|------------------------|-------------------------------|
@@ -246,8 +249,8 @@ Hashtags with an asterisk next to them (first column) show that over half of the
 
 <h4> Hypothesis 7 was confirmed because several hashtags met the criteria of being hijacked </h4> 
 
-<h3> BUT, </h3>
-
+<h4> BUT, </h4>
+During the analysis procedures, many important faults were observed in the initially constructed method of detecting hashtag hijacking. 
 
 <h2>Main takeaways</h2>
 
