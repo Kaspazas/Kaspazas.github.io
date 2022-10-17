@@ -2,7 +2,7 @@
 title: Visual works
 name: visual
 layout: page
-desc: Some original designs and photo restoration, mainly using Photoshop
+desc: Some original designs and photo restoration, mainly using Photoshop/Illustrator
 ---
 
 It's been a while since I actively used Photoshop or worked with visual content, I have some designs and works I'm proud of.
