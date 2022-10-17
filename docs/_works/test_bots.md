@@ -32,7 +32,9 @@ Hypothesis 7: Bots will participate in hashtag hijacking
 
 <h4>Furthermore: </h4>
 
-To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, Botometer LINK) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
+To ensure valid findings, I prioritized statistical comparisons where available. Drawing concrete conclusions only in cases where statistically significant differences could be observed between groups. Furthermore, I divided the category of “bot” into two: simple bots and sophisticated bots, based on prior research highlighting differences in behaviors based on bot-checker (in this case, [Botometer](https://botometer.osome.iu.edu/)) score. Wherein a high bot-checker score indicates a type of automation that matches more with known bot behaviors, and less with known human behaviors, leading to the simple classification. A lower, but still high score is indicative of behaviors between that of known humans and bots, reflecting the sophisticated (more natural, human like) aspect of the second bot classification. I believe this differentiation to be meaningful and allowing for a more accurate understanding of the issues plaguing our social media. 
+
+Lastly, in the thesis and this write-up I refer to groups of users as a class (for classification), which are _missing_, _humans_, _simple bots_ and _sophisticated bots_, defined by [Botometer](https://botometer.osome.iu.edu/) results.
 
 <h2>General observations</h2>
 
@@ -115,6 +117,16 @@ Using LDA (Latent Dirichlet Allocation via [Gensim](https://radimrehurek.com/gen
 |     10           |     Australia   and Djokovic                    |
 |     11           |     Addressing antivaxxers                      |
 |     12           |     Drinking   urine                            |
+
+These are the sub-topics (and example tweets) relevant to the hypotheses:
+
+|     Topic                                |     Example tweet                                                                                                                                                                                                                                                                                                |
+|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Spread of Omicron                    |     As the fake claim that ivermectin is a   miracle cure for COVID loses its shine, antivaxxers have turned to a new fake   claim. Apparently, omicron is now the miracle cure. A lot of filling   hospitals say otherwise.                                                                                     |
+|     Addressing   antivaxxers             |     Macron   is right: It’s time to make life a living hell for anti-vaxxers!                                                                                                                                                                                                                                    |
+|     Drinking Urine                       |     love that the antivaxxers have now   bent fully into the narrative that Jesus wants you to have a piss kink (???)                                                                                                                                                                                            |
+|     Questioning medical   authorities    |     mRNA     The   vaccine works. There's been over 500 million doses. Its not experimental.   Doctors are smarter than you. The media that is being censored is being   censored because it is full of shit. The vaccine won't hurt you. Or kill you.        Stop   spreading propaganda. Idc if ur antivaxx    |
+|     Antivax beliefs                      |     there is one pill that big   pharmaceutical will never produce or give to the people is truth.     #massformationpsychosis #pfizer   #astrazeneca #covid19 #holdtheline #antivaxx                                                                                                                            |
 
 
 ![participation across topics](/assets/images/thesis_1.PNG)
