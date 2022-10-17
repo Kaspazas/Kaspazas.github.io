@@ -250,7 +250,9 @@ Hashtags with an asterisk next to them (first column) show that over half of the
 <h4> Hypothesis 7 was confirmed because several hashtags met the criteria of being hijacked </h4> 
 
 <h4> BUT, </h4>
-During the analysis procedures, many important faults were observed in the initially constructed method of detecting hashtag hijacking. 
+During the analysis procedures, many important faults were observed in the initially constructed method of detecting hashtag hijacking. For example, #Quebec is used in tandem with #unvaccinated by bots 20 times, and #unvaccinated is found to have #Quebec used alongside it 21 times. This is indicative of a single or multiple tweets that contain both of these hashtags (and likely the connected Canada-related hashtags) being retweeted by bots and distorting the results. This assumption is made because of the closely matching frequency counts. It is considered distortion rather than an indication of trend hijacking because the retweeting of a handful of tweets could happen for a number of reasons, only one of which is purposeful hashtag hijacking.
+
+Another issue is illustrated by #trumpvirus, which, when used by bots, only had one connected hashtag (which was not the case for humans using #trumpvirus). It does raise issues with this method of analysis, because the hashtag could not be used to examine the differences between hashtags used in tandem as described in the construction of the method. While the full details are left out in this write up, the planned method of analysis required the comparison of 6 hashtags most frequently co-occuring with an investigated hashtag, whereby at least three had to be different between bots and humans. 
 
 <h2>Main takeaways</h2>
 
