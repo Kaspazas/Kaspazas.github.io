@@ -7,7 +7,7 @@ desc: Twitter bot behavior and tactics within COVID-19 vaccination related Twitt
 
 <h2>Introduction</h2>
 
-	In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
+In the thesis, I set out to discover patterns of Twitter bot behavior by comparing them to regular (human) users.
 To keep the work topical and allow for new insights outside of bot tactics, the Tweets collected were from Covid-vaccine related discussions on Twitter.
 Several informed assumptions lay at the foundation of this work. Firstly, bots, having been used by various actors for over 10 years, have likely undergone some form of optimization. Automated accounts comprise Twitter user populations at high rates. It is suggested that having portions of a botnet behave in slightly different ways is a plausible mechanism for over time optimizing outreach, garnering interactions and so forth. Secondly, while it was outside of the scope of this work to identify the deployers of these bots, it was assumed that most automated accounts detected were part of a broader information operation. 
 In turn, this was used to inform the hypotheses developed for this work, wherein expected bot behaviors were derived from information warfare literature. As was found later, many bots retweeted each other at extremely high rates, supporting the idea that many of these users came from a single deployer.
@@ -64,7 +64,7 @@ As seen in the table above, simple bots tend to retweet other bots at extremely 
 
 <h2>Network analysis</h2>
 
-Visualization of the retweet network:
+Visualization of the retweet network made using [Gephi](https://gephi.org/):
 ![old network image](/assets/images/network_temp.png)
 
 
