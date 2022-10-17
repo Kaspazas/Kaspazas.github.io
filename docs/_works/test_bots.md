@@ -245,7 +245,7 @@ Lastly, the frequencies of co-occurring (hashtags used in the same tweets as the
 |     delta                |     Bots      |     covid19: 21, antivaxxers: 17,   deltavariant: 13, deltacron: 9, blog: 8, lifestyle: 8                               |
 |                          |     Humans    |     covid19: 24, deltacron: 19, omicron: 18, antivaxxers: 17, antivaxx: 10, covidiots: 7                                |
 
-Hashtags with an asterisk next to them (first column) show that over half of the most commonly co-occurring hashtags are different between classes. This indicates that associated discussion is different between bots and humans.
+Hashtags with an asterisk next to them (first column, table above) show that over half of the most commonly co-occurring hashtags are different between classes. This indicates that associated discussion is different between bots and humans.
 
 <h4> Hypothesis 7 was confirmed because several hashtags met the criteria of being hijacked </h4> 
 
