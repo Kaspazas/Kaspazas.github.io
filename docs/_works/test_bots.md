@@ -14,6 +14,12 @@ In turn, this was used to inform the hypotheses developed for this work, wherein
 
 <h3>The hypotheses: </h3>
 
+The hypotheses were derived from a synthesis of academic literature covering information warfare, social media platform features, the types of action enabled by the design of bots and other literature featuring social psychology, persuasion and more.
+
+Information warfare was used to identify broader approaches to controlling and exploiting the information environment of a given actor (group, state, etc.).
+Through reviewing features and incentives of social media platforms, the thesis presented social media as a metaphorical _battleground_. Wherein network structures limit the ability of one to attack on a broad front, algorithms act as external forces that aid or hinder the spread of (dis)information, and the owners of the platforms get to alter the algorithmic forces or remove certain information/users, acting as a third party combatant. 
+The technological features of bots show them to be a highly coordinated, easily replenishable force. In turn, these automated accounts, through their vast numbers can also shape the algorithms and make sure they infiltrate various corners of a discussion network.
+
 Hypothesis 1-1: Bots will disproportionately occupy positions of high network influence
 
 Hypothesis 1-2: Bots will have a proportionately higher number of outgoing communications (tweets, retweets) than human accounts
