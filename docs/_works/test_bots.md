@@ -59,11 +59,11 @@ Furthermore, an extremely high rate of hashtag use by sophisticated bots was obs
 
 Inter-class retweet rates:
 
-|                             |     From   human                  |     From   simple bot            |     From   sophisticated bot    |
+|                             |     From   Human                  |     From   Simple bot            |     From   Sophisticated bot    |
 |-----------------------------|-----------------------------------|----------------------------------|---------------------------------|
-|     To human                |     10,218   (84.25% of total)    |     1,218   (42.88% of total)    |     1183   (67.41% of total)    |
-|     To basic bot            |     983 (8.11 % of total)         |     920 (32.39% of total)        |     261 (14.87% of total)       |
-|     To sophisticated bot    |     927   (7.64% of total)        |     702   (24.72% of total)      |     311   (17.72% of total)     |
+|     To Human                |     10,218   (84.25% of total)    |     1,218   (42.88% of total)    |     1183   (67.41% of total)    |
+|     To Simple bot           |     983 (8.11 % of total)         |     920 (32.39% of total)        |     261 (14.87% of total)       |
+|     To Sophisticated bot    |     927   (7.64% of total)        |     702   (24.72% of total)      |     311   (17.72% of total)     |
 
 As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
 
@@ -186,7 +186,7 @@ As found via Dunn tests following initial Kruskal-Wallis H tests, humans and sim
 
 <h2>Hashtags WORK IN PROGRESS</h2>
 
-In the thesis, I tried to construct a custom methodology to detect hashtag hijacking, based on other works describing the phenomenon (namely [Prier, 2017](http://www.jstor.org/stable/26271634)).
+In the thesis, I tried to construct a custom methodology to detect hashtag hijacking, based on other works describing the phenomenon (namely [Prier, 2017](http://www.jstor.org/stable/26271634)). Note that because no relevant research indicated whether a differentiation between sophisticated and simple bots would be meaningful, this section merges them together.
 
 The thesis considered a hashtag as being hijacked if:
 
