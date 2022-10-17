@@ -183,26 +183,71 @@ As found via Dunn tests following initial Kruskal-Wallis H tests, humans and sim
 
 <h2>Hashtags WORK IN PROGRESS</h2>
 
+In the thesis, I tried to construct a custom methodology to detect hashtag hijacking, based on other works describing the phenomenon (namely [Prier, 2017](http://www.jstor.org/stable/26271634)).
+
+The thesis considered a hashtag as being hijacked if:
+
+1.	It was already actively being used by humans. 
+
+2.	Bots start using the hashtag in disproportionate numbers.
+
+3.	The hashtag’s meaning or associated discussion is altered once bots are introduced.
+
+
 Out of the total 5022 unique hashtags contained in the dataset, 105 were used
 prominently enough (exceeding 15 uses) by human users to be investigated further. Upon
-graphing the usage of these by class, 13 (identified in figure 8 below) showed enough
-sustained disproportionate use by bots to be considered as potentially being hijacked. That is,
+graphing the usage of these by class, 13 showed enough sustained disproportionate use by bots to be considered as potentially being hijacked. That is,
 these hashtags were being used at least once by bots for every two human uses and such a
 ratio remained consistent for at least six hours.
 
-The hashtags classified as potentially being hijacked had their associated tweet texts
-examined via sentiment analysis, and compared between classes. 
-
-The sentiments associated with each hashtag were compared across classes:
-
-![boxplots of sentiments](/assets/images/boxplots.png)
-
-Furthermore, the frequencies of co-occurring (hashtags used in the same tweets as the investigated hashtag) were counted and compared between classes.
-
+Example of a hashtag meeting criterion 2:
 
 ![trumpvirus use per classification](/assets/images/thesis_4.PNG)
 
+For criterion 3, to see if a hashtag's meaning or associated discussion is altered by the bots, the hashtags classified as potentially being hijacked had their associated tweet texts
+examined via sentiment analysis, and compared between classes: 
+
+![boxplots of sentiments](/assets/images/boxplots.png)
+
+Due to the distribution of sentiments found in texts used alongside investigated hashtags, statistical tests could not be used to compare class sentiments, thus the thesis was limited to a visual comparison, and this method does not allow one to draw any concrete conclusions. Hence a follow up method was used.
+
+Lastly, the frequencies of co-occurring (hashtags used in the same tweets as the investigated hashtag) were counted and compared between classes: 
+
+|     Hashtag              |     Class     |     6 most used associated hashtags for both classes and number of respective co-occurrences.                           |
+|--------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------|
+|     urineidiot           |     Bots      |     antivaxxers: 89, qanons: 5, covidiots:   4, antivaxx: 3, urine: 3, urinetherapy: 2                                  |
+|                          |     Humans    |     antivaxxers: 109,   urinetherapy: 18, covidiots: 17, covid19: 13, qanons: 11, antivaxx: 9                           |
+|     unvaccinated*        |     Bots      |     antivaxx: 22, covid19: 21, quebec: 20,   healthtax: 20, qcpoli: 19, cdnpoli: 19                                     |
+|                          |     Humans    |     antivaxxers: 43,   antivaxx: 33, covid19: 22, covidiots: 14, covid: 12, vaccineswork: 10                            |
+|     vaccination          |     Bots      |     antivaxxers: 22, covid19: 10, cuban: 9,   deltavariant: 5, antivax: 5, covidvaccination: 4                          |
+|                          |     Humans    |     antivaxxers: 42,   covid19: 33, antivax: 16, antivaxx: 13, mandatoryvaccination: 11,   vaxxedvsantivaxx: 11         |
+|     trumpvirus           |     Bots      |     antivaxxers: 101                                                                                                    |
+|                          |     Humans    |     antivaxxers: 48,   covid19: 3, unvaccinated: 3, covidiots: 2, desantis: 1, covid_19: 1                              |
+|     quebec*              |     Bots      |     unvaccinated: 21, cdnpoli: 19, covid19:   18, qcpoli: 17, cdnhealth: 17, corona: 16                                 |
+|                          |     Humans    |     antivaxxers: 21,   covid19: 11, antivaxx: 11, cdnpoli: 9, canada: 8, unvaccinated: 4                                |
+|     freedom              |     Bots      |     antivaxx: 18, america: 15, antivaxxers:   5, humanrights: 2, novaccinemandates: 2, covid19: 2                       |
+|                          |     Humans    |     antivaxx: 24, america:   19, antivaxxers: 8, antivax: 6, covid_19: 3, covid19: 3                                    |
+|     science              |     Bots      |     antivaxxers: 9, climatechange: 5,   pandemicofselfoverothers: 5, antivax: 5, sciencedeniers: 5, deniers: 4          |
+|                          |     Humans    |     antivaxxers: 33,   antivaxx: 11, covid19: 10, antiscience: 10, antivax: 10, climatechange: 6                        |
+|     canada               |     Bots      |     antivaxxers: 10, unvaccinated: 8,   covid19: 8, quebec: 7, cdnpoli: 7, healthtax: 6                                 |
+|                          |     Humans    |     antivaxxers: 20,   covid19: 13, antivaxx: 8, quebec: 8, unvaccinated: 7, cdnpoli: 7                                 |
+|     america              |     Bots      |     antivaxx: 24, freedom: 15, antivaxxers:   6, antivax: 4, wwe: 3, maga: 3                                            |
+|                          |     Humans    |     antivaxx: 29, freedom:   20, antivaxxers: 11, trump: 6, americafirst: 5, gop: 5                                     |
+|     deltacron            |     Bots      |     covid19: 6, delta: 4, omicron: 3,   antivaxxers: 3, antivaxx: 2, pcrcollectsdna: 1                                  |
+|                          |     Humans    |     covid19: 15,   antivaxxers: 9, omicron: 9, antivaxx: 6, vaccineswork: 4, omicronvariant: 4                          |
+|     vaccine-mandates*    |     Bots      |     covid19: 22, antivaxx: 21,   coronavirusupdates: 20, qcpoli: 19, cdnpoli: 19, cdnhealth: 19                         |
+|                          |     Humans    |     novaccinemandates: 31,   antivaxxers: 22, antivaxx: 15, covid19: 9, novaccinepassports: 8,   vaccinepassports: 5    |
+|     funny*               |     Bots      |     jimmykimmel: 7, antivax: 7, hilarious:   7, barbie: 7, morningjoe: 7, tuesdayfunnies: 7                             |
+|                          |     Humans    |     getvaccinated: 12,   wearamask: 12, humor: 9, comics: 9, antivax: 7, antivaxxers: 7                                 |
+|     delta                |     Bots      |     covid19: 21, antivaxxers: 17,   deltavariant: 13, deltacron: 9, blog: 8, lifestyle: 8                               |
+|                          |     Humans    |     covid19: 24, deltacron: 19, omicron: 18, antivaxxers: 17, antivaxx: 10, covidiots: 7                                |
+
+Hashtags with an asterisk next to them (first column) show that over half of the most commonly co-occurring hashtags are different between classes. This indicates that associated discussion is different between bots and humans.
+
 <h4> Hypothesis 7 was confirmed because several hashtags met the criteria of being hijacked </h4> 
+
+<h3> BUT, </h3>
+
 
 <h2>Main takeaways</h2>
 
