@@ -58,7 +58,9 @@ And then one is ready to evaluate and even visualize the sentiment of the entire
 	ua_con.describe()
 	
 	ua_con_g = ua_con.groupby(pd.Grouper(freq='1440T')).mean()
-	
+	plt.plot(ua_con_g.index, ua_con_g.iloc[:,1])
+	plt.title("Compound sentiment over time")
+	plt.grid('both')
 
 ![sentiment whole](/assets/images/s_a1.png)
 
