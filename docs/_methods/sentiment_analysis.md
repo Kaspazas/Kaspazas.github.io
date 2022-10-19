@@ -65,7 +65,7 @@ And then one is ready to evaluate and even visualize the sentiment of the entire
 <h3>A deeper, more practically applicable approach</h3>
 One can sub-divide devide their dataset, based on the topic of given texts, or through the inclusion of certain keywords.
 
-For marketing, this could be used to examine sentiments related to features of a product or event. For example, one could evaluate the sentiment related to the price of a product, by segmenting the downloaded text into a sub-set that includes price related keywords.
+For marketing, this could be used to examine sentiments related to features of a product or event. For example, one could evaluate the sentiment related to the price of a product, by segmenting the downloaded text into a sub-set that includes price related keywords. Note that this is a very basic approach, which can be improved through additional language processing (for example finding what words represent combined concepts through [word embedding](/methods/word-embedding) and more carefully defined queries.
 
 As for the example dataset used here, we can use it to evaluate sentiment related to russian equipment:
 
@@ -101,6 +101,17 @@ The same can be done with sentences mentioning both Ukrainian armed forces and e
 	plt.grid('both')
 	
 ![sentiment both arms](/assets/images/s_a3.png)
+
+Note that the sub-reddit is generally pro-Ukrainian, so the sentiment recorded migh be reflecting comments such as these ones:
+
+|     Example comments                                                                      |  Compound sentiment value |
+|-------------------------------------------------------------------------------------------|---------------------------|
+|_berlin blocked spain from sending german made tanks to ukraine_                           | -0.37                     |
+|_it helps when the ukrainian precision weapons can target them but they can't target back_ | -0.038                    |
+
+While some comments report a negative sentiment, they are often pro-Ukraine and generally praise Ukraine's weapons/their use.
+
+<h2> Incomplete </h2>
 
 Such an approach allows one to look for shifts in sentiment following major events.
 
