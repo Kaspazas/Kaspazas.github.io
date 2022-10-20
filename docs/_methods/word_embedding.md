@@ -86,4 +86,6 @@ So to create a _concept_:
 	
 	avg = statistics.mean(vals)
 	
-more coming soon
+Such a _concept_ can then be used in the visualization/calculations of distances.
+
+More coming soon...
