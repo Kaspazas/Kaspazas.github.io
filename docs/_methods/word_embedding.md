@@ -31,7 +31,7 @@ To make the word embeddeding model creation process manageable, the data is divi
 		print("Saving chunk as: ", chunk_name)
 		doc_bin.to_disk(chunk_name)
 		
-Furthermore, the data is saved in a LineSentence format, wherein each line in a dataframe containts a single sentence.
+Furthermore, the data is saved in a LineSentence format, wherein each line in a dataframe contains a single sentence.
 
     def make_LineSentence_corpus(list_of_spacy_docbin_paths, spacy_model = "en_core_web_lg", outfile = "myCorpus.cor"):
         nlp = spacy.load(spacy_model)

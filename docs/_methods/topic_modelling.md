@@ -28,7 +28,7 @@ Making of corpus to be fed into the ML process:
     corpus = [dictionary.doc2bow(doc) for doc in processed_docs]  # initialize Gensim corpus
     gensim.corpora.MmCorpus.serialize('corpus.mm', corpus)  # save for later use
 
-Making of the model, note that all sorts of variables need to be experemented with and optimized for best results
+Making of the model, note that all sorts of variables need to be experimented with and optimized for best results.
 
     model = models.LdaModel(corpus=corpus,
                             id2word=dictionary,

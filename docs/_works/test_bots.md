@@ -65,7 +65,7 @@ Inter-class retweet rates:
 |     To Simple bot           |     983 (8.11 % of total)         |     920 (32.39% of total)        |     261 (14.87% of total)       |
 |     To Sophisticated bot    |     927   (7.64% of total)        |     702   (24.72% of total)      |     311   (17.72% of total)     |
 
-As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network their role is partly based on amplifying bot posted content. 
+As seen in the table above, simple bots tend to retweet other bots at extremely high rates compared to human users, indicating that they are likely aware of other bots in the discussion network and their role is partly based on amplifying bot posted content. 
 
 <h4>Hypothesis 1-1 was confirmed because bots had rates (user to tweet) of out-going communications, which were higher than that of humans'</h4>
 <h4>Hypothesis 1-2 was confirmed because both classes of bots (especially highlighted by simple bots) retweet other bots much more frequently than humans retweet bots</h4>
@@ -134,7 +134,7 @@ These are the sub-topics (and example tweets) relevant to the hypotheses:
 |     Questioning medical   authorities    |     mRNA     The   vaccine works. There's been over 500 million doses. Its not experimental.   Doctors are smarter than you. The media that is being censored is being   censored because it is full of shit. The vaccine won't hurt you. Or kill you.        Stop   spreading propaganda. Idc if ur antivaxx    |
 |     Antivax beliefs                      |     there is one pill that big   pharmaceutical will never produce or give to the people is truth.     #massformationpsychosis #pfizer   #astrazeneca #covid19 #holdtheline #antivaxx                                                                                                                            |
 
-In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivax. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
+In this work, bots tended to avoid discussing the difficulties faced by the healthcare sector, the spread of the new (at the time of data collection) strain of COVID-19, mask wearing and the beliefs held by those considered antivaxx. As for the topics favored by bots in this work: the proliferation of false information, poor critical thinking ability and how to deal with antivaxxers in public policy or interaction.
 
 ![participation across topics](/assets/images/thesis_1.PNG)
 
@@ -159,7 +159,7 @@ Class participation rates in conspiracy theory related topics:
 |     Antivax beliefs                    |     329               |     19                 |     28                        |
 |     Total ( % of all users)            |     1,179 (84.64%)    |     103 (7.39%)        |     111 (7.94%)               |
 
-Neither bot class showed disproportionate participation in conspiracy theory related topics, despite some these sub-topics containing actual instances of disinformation.
+Neither bot class showed disproportionate participation in conspiracy theory related topics, despite some of these sub-topics containing actual instances of disinformation.
 
 <h4>Hypothesis 4 was rejected because bots did not disproportionately participate in conspiracy-related discussions</h4>
 
@@ -260,7 +260,7 @@ Another issue is illustrated by #trumpvirus, which, when used by bots, only had 
 
 2. It is posed that sophisticated bots target human users as interaction partners frequently and in turn, are able to better position themselves in a discursive network, reaching more important humans at higher rates. Furthermore, the thesis suggests that the benefit of sophisticated bots is also likely to be found in the content they produce, which is often liked and shared by humans.
 
-3. Sentiment and content analyses show that while bots exhibit different preferences for sentiment and topics than humans, no clear patterns indicative of tactics can be identified in this work. This work did find that across most topics and timeframes, the sentiment between simple bots and humans was significantly different, indicating that simple bots construct/select the texts of their tweets in a way distinct to humans. Fewer instances of divergence were observed between sophisticated bots and humans, reinforcing the idea that sophisticated bots behave and comunicate more like humans than simple bots.
+3. Sentiment and content analyses show that while bots exhibit different preferences for sentiment and topics than humans, no clear patterns indicative of tactics can be identified in this work. This work did find that across most topics and timeframes, the sentiment between simple bots and humans was significantly different, indicating that simple bots construct/select the texts of their tweets in a way distinct to humans. Fewer instances of divergence were observed between sophisticated bots and humans, reinforcing the idea that sophisticated bots behave and communicate more like humans than simple bots.
 
 4. Results relating to topic preferences did not reveal generalizable differences between the two types of automated accounts. Differences in participation across topics were found, but topics prioritized by either class did not seem to share any themes. In this work sophisticated bots, relative to simple bots (but not human users) were over represented in: Questioning medical authorities, Mask wearing and Unvaccinated people causing deaths. Simple bots participated in Spread of Omicron, Poor critical thinking ability and Addressing antivaxxers at higher relative rates than sophisticated bots. 
 
